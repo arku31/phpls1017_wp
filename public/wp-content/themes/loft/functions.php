@@ -1,4 +1,5 @@
 <?php
+add_theme_support('menus');
 function getPostImage()
 {
     $url = get_the_post_thumbnail_url();

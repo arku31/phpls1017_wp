@@ -18,14 +18,21 @@
                     <div class="logo-wrap"><a href="/"><img src="/img/logo.svg" alt="Логотип" class="logo-wrap__logo-img"></a></div>
                 </div>
                 <nav class="main-navigation">
-                    <ul class="nav-list">
-                        <li class="nav-list__nav-item"><a href="#" class="nav-list__nav-item__nav-link">Главная</a></li>
-                        <li class="nav-list__nav-item"><a href="#" class="nav-list__nav-item__nav-link">Полезная информация</a></li>
-                        <li class="nav-list__nav-item"><a href="#" class="nav-list__nav-item__nav-link">Последние акции</a></li>
-                        <li class="nav-list__nav-item"><a href="#" class="nav-list__nav-item__nav-link">О сервисе</a></li>
-                        <li class="nav-list__nav-item"><a href="#" class="nav-list__nav-item__nav-link">Новости</a></li>
-                    </ul>
+                    <?php wp_nav_menu([
+                            'container' => false,
+                            'menu_class' => 'nav-list'
+                    ]); ?>
                 </nav>
+<!---->
+<!--                <nav class="main-navigation">-->
+<!--                    <ul class="nav-list">-->
+<!--                        <li class="nav-list__nav-item"><a href="#" class="nav-list__nav-item__nav-link">Главная</a></li>-->
+<!--                        <li class="nav-list__nav-item"><a href="#" class="nav-list__nav-item__nav-link">Полезная информация</a></li>-->
+<!--                        <li class="nav-list__nav-item"><a href="#" class="nav-list__nav-item__nav-link">Последние акции</a></li>-->
+<!--                        <li class="nav-list__nav-item"><a href="#" class="nav-list__nav-item__nav-link">О сервисе</a></li>-->
+<!--                        <li class="nav-list__nav-item"><a href="#" class="nav-list__nav-item__nav-link">Новости</a></li>-->
+<!--                    </ul>-->
+<!--                </nav>-->
             </div>
         </div>
         <div class="bottom-header">
